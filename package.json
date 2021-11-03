@@ -2,6 +2,9 @@
   "name": "microservice-dipan",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "all": "^0.0.0",
     "axios": "^0.24.0",
@@ -25,8 +28,5 @@
     "url": "https://github.com/Team-Inle/microservice-dipan/issues"
   },
   "homepage": "https://github.com/Team-Inle/microservice-dipan#readme",
-  "description": "",
-  "engines": {
-    "node": "14.x"
-  }
+  "description": ""
 }
