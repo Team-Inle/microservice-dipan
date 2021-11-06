@@ -72,7 +72,8 @@ app.get('/scrape', function(req, res){
 		.then(items => {
 			// if requested algorithm does not have a corresponding page
 			if(items.indexOf('/'+req.query.algorithm+'/') == -1) {
-				console.log("Algorithm (" + req.query.algorithm + ") NOT FOUND!")
+				console.log("Algorithm (" + req.query.algorithm + ") NOT FOUND!");
+				res.setHeader("Access-Control-Allow-Origin", "*");
 				res.send({
 					algorithm: req.query.algorithm,
 					description: "ERROR: NOT FOUND",
